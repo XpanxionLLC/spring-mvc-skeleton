@@ -18,11 +18,22 @@ dependencies {
     compile 'org.hibernate:hibernate-core:4.2.6.Final'
     compile 'commons-dbcp:commons-dbcp:1.4'
     compile 'org.hibernate:hibernate-ehcache:4.2.6.Final'
-    runtime 'postgresql:postgresql:9.1-901.jdbc4'
     testCompile 'org.mockito:mockito-all:1.9.5'
     compile 'javax.servlet:jstl:1.2'
     compile 'org.liquibase:liquibase-core:3.0.5'
     providedCompile 'org.apache.tomcat:tomcat-servlet-api:7.0.42'
+
+    // Database jdbc connectors uncomment the one that you need
+    
+    //postgres
+	runtime 'postgresql:postgresql:9.1-901.jdbc4' 
+
+	//mysql 
+	//runtime 'mysql:mysql-connector-java:5.1.27'
+	
+	//oracle : download and place the oracle jdbc driver jar somewhere.  Add an enviroment variable 
+	// of ORACLE_JDBC_HOME to the location that you placed the jar
+	//runtime files(System.getenv("ORACLE_JDBC_HOME") + File.separator + "ojdbc6.jar")
 }
 
 sonarRunner{

@@ -66,12 +66,6 @@
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
-			<artifactId>postgresql</artifactId>
-			<groupId>postgresql</groupId>
-			<version>9.1-901.jdbc4</version>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
 			<artifactId>mockito-all</artifactId>
 			<groupId>org.mockito</groupId>
 			<version>1.9.5</version>
@@ -95,5 +89,38 @@
 			<version>7.0.42</version>
 			<scope>provided</scope>
 		</dependency>
+		
+		<!-- Database Connectors, Uncomment the one that you need -->
+		
+		<!-- posgres -->
+		
+		<dependency>
+			<artifactId>postgresql</artifactId>
+			<groupId>postgresql</groupId>
+			<version>9.1-901.jdbc4</version>
+			<scope>runtime</scope>
+		</dependency>
+		
+		
+		<!-- MySQL -->
+		<!-- 
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.27</version>
+		</dependency>
+             -->
+		<!-- Oracle XE 11g 
+		You will need to download the oracle jdbc driver and install it by running this command in the directory you downloaded it to 
+		
+		mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0.3 -Dpackaging=jar -Dfile=ojdbc6.jar -DgeneratePom=true
+		 -->
+		 <!-- 
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.2.0.3</version>
+		</dependency>
+		 -->
 	</dependencies>
 </project>
