@@ -93,15 +93,13 @@
 		<!-- Database Connectors, Uncomment the one that you need -->
 		
 		<!-- posgres -->
-		
 		<dependency>
 			<artifactId>postgresql</artifactId>
 			<groupId>postgresql</groupId>
 			<version>9.1-901.jdbc4</version>
 			<scope>runtime</scope>
 		</dependency>
-		
-		
+	
 		<!-- MySQL -->
 		<!-- 
 		<dependency>
@@ -120,6 +118,18 @@
 			<groupId>com.oracle</groupId>
 			<artifactId>ojdbc6</artifactId>
 			<version>11.2.0.3</version>
+		</dependency>
+		 -->
+		<!-- MS SQLServer 
+		You will need to download the mssql jdbc driver and install it by running this command in the directory you downloaded it to 
+		
+		mvn install:install-file -DgroupId=com.microsoft -DartifactId=sqljdbc -Dversion=4.0 -Dpackaging=jar -Dfile=sqljdbc4.jar -DgeneratePom=true
+		 -->
+		 <!-- 
+		<dependency>
+			<groupId>com.microsoft</groupId>
+			<artifactId>sqljdbc</artifactId>
+			<version>4.0</version>
 		</dependency>
 		 -->
 	</dependencies>

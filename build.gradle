@@ -34,6 +34,10 @@ dependencies {
 	//oracle : download and place the oracle jdbc driver jar somewhere.  Add an enviroment variable 
 	// of ORACLE_JDBC_HOME to the location that you placed the jar
 	//runtime files(System.getenv("ORACLE_JDBC_HOME") + File.separator + "ojdbc6.jar")
+
+	//mssql : download and place the mssql driver on your files system and Add an enviroment variable called
+	//MSSQL_JBDC_HOME to the folder that contains the driver jar. 
+	//runtime files(System.getenv("MSSQL_JDBC_HOME") + File.separator + "sqljdbc4.jar")
 }
 
 sonarRunner{
