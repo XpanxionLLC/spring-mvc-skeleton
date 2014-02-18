@@ -93,13 +93,15 @@
 		<!-- Database Connectors, Uncomment the one that you need -->
 		
 		<!-- posgres -->
+		<!-- 
 		<dependency>
 			<artifactId>postgresql</artifactId>
 			<groupId>postgresql</groupId>
 			<version>9.1-901.jdbc4</version>
 			<scope>runtime</scope>
 		</dependency>
-	
+	 	-->
+	 	
 		<!-- MySQL -->
 		<!-- 
 		<dependency>
@@ -108,6 +110,16 @@
 			<version>5.1.27</version>
 		</dependency>
              -->
+        
+        <!-- Derby -->   
+        <dependency>
+			<groupId>org.apache.derby</groupId>
+			<artifactId>derby</artifactId>
+			<version>10.10.1.1</version>
+			<scope>runtime</scope>
+		</dependency>
+            
+             
 		<!-- Oracle XE 11g 
 		You will need to download the oracle jdbc driver and install it by running this command in the directory you downloaded it to 
 		
