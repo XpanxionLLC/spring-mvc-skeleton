@@ -5,7 +5,7 @@
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd"> 
    
-	<changeSet author="Brian Smith" id="create-test-table-with-data" dbms="mysql,postgresql,mssql,derby">
+	<changeSet author="Brian Smith" id="create-test-table-with-data" dbms="mysql,postgresql,mssql,derby,h2">
 		<createTable tableName="test">
 			<column name="id" type="integer" autoIncrement="true">
 				<constraints primaryKey="true"/>

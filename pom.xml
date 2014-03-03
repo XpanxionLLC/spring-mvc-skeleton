@@ -93,14 +93,14 @@
 		<!-- Database Connectors, Uncomment the one that you need -->
 		
 		<!-- posgres -->
-		<!-- 
+		 
 		<dependency>
 			<artifactId>postgresql</artifactId>
 			<groupId>postgresql</groupId>
 			<version>9.1-901.jdbc4</version>
 			<scope>runtime</scope>
 		</dependency>
-	 	-->
+	 	
 	 	
 		<!-- MySQL -->
 		<!-- 
@@ -112,14 +112,24 @@
              -->
         
         <!-- Derby -->   
+        <!-- 
         <dependency>
 			<groupId>org.apache.derby</groupId>
 			<artifactId>derby</artifactId>
 			<version>10.10.1.1</version>
 			<scope>runtime</scope>
 		</dependency>
-            
-             
+        -->
+           
+        <!-- H2 -->
+        <!-- 
+        <dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>1.3.175</version>
+		</dependency>   
+         -->
+              
 		<!-- Oracle XE 11g 
 		You will need to download the oracle jdbc driver and install it by running this command in the directory you downloaded it to 
 		

@@ -34,6 +34,9 @@ dependencies {
 	//derby
 	//runtime 'org.apache.derby:derby:10.10.1.1'
 	
+	//h2
+	//runtime 'com.h2database:h2:1.3.175'
+	
 	//oracle : download and place the oracle jdbc driver jar somewhere.  Add an enviroment variable 
 	// of ORACLE_JDBC_HOME to the location that you placed the jar
 	//runtime files(System.getenv("ORACLE_JDBC_HOME") + File.separator + "ojdbc6.jar")
