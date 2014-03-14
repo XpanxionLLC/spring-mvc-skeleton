@@ -10,15 +10,15 @@
 			<column name="id" type="integer">
 				<constraints primaryKey="true"/>
 			</column>
-			<column name="value" type="text"/>
+			<column name="info" type="text"/>
 		</createTable>
 		<insert tableName="test">
 			<column name="id" value="1"/>
-			<column name="value" value="Test One"/>
+			<column name="info" value="Test One"/>
 		</insert>
 		<insert tableName="test">
 			<column name="id" value="2"/>
-			<column name="value" value="Yep It Works"/>
+			<column name="info" value="Yep It Works"/>
 		</insert>
 	</changeSet>                    
 </databaseChangeLog>
